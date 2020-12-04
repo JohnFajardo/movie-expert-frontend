@@ -1,0 +1,96 @@
+$body-bg: #212529;
+$headings-color: #f8f9fa;
+$body-color: #f8f9fa;
+$link-color: #f8f9fa;
+$link-hover-decoration: underline;
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+
+// custom classes 
+.text-center {
+    padding-top: 16px;
+}
+
+.movie-search {
+    margin-top: 16px;
+}
+
+.movie-container {
+    background-color: rgba(0, 0, 0, 0.70);
+    margin-top: 16px;
+    margin-bottom: 0;
+    padding-bottom: 0.001em;
+    height: 100%;
+
+    .movie-title {
+        padding-top: 32px;
+        text-align: center;
+    }
+
+    .synopsis-container {
+        flex: 1 1 auto;
+
+        .movie-synopsis {
+            margin-top: 16px;
+            border-top: 1px solid darken(#fff, 80%);
+            padding-top: 16px;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+    }
+}
+
+.poster {
+    figure {        
+        position: relative;
+        
+        figcaption {
+            padding: 4px 8px;
+            margin: 0;
+            display: block;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.70);
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+}
+
+.vote-container {
+    margin-top: 16px;
+    padding-bottom: 32px;
+
+    button {
+        font-size: smaller;
+    }
+}
+
+.score-display-light {
+    font-size: 18px;
+    align-self: center;
+    margin-top: 5px;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.rating-container {
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.half-star {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+// Bootstrap always after custom stuff
+@import '~bootstrap/scss/bootstrap.scss';

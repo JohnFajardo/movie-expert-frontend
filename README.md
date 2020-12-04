@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+<h1 align="center">🎥 The movie expert - Frontend🎥</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2 align="center">🎞️ An app to search for and rate movies 🎞️</h2>
 
-## Available Scripts
+---
+![](preview.gif)
 
-In the project directory, you can run:
+## Description
+---
+This app lets you enter a movie title and it will return every movie that matches your query. Then if you click on a movie, you can:
 
-### `yarn start`
+* View the movie synopsis
+* View movie metadata like release year and director.
+* Upvote or downvote the movie. A global "5-star" score is then generated based on the upvote/downvote ratio. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The votes are saved to the database, so even if you click away from the movie, you can always come back to it and it will display the saved score.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Running on your computer:
+1. You first need to get the backend, so check [the backend repo first](https://github.com/ThatJohn/movie-expert-backend) and then come back for step 2.
+2. Go to [The Movie Database](https://developers.themoviedb.org/3/getting-started/introduction) and sign up for an API key.
+3. Edit your `~/.bashrc`, `~/.zshrc` or similar and add `export REACT_APP_TMDB_API_KEY='your_new_api_key'`.
+4. Clone this respository and cd into it:
+```
+git clone git@github.com:ThatJohn/movie-expert-frontend.git
+cd movie-expert-frontend
+```
+5. Run `npm install`.
+6. Run `npm start` and then visit `http://localhost:3001` on your browser.
+7. Enjoy!
